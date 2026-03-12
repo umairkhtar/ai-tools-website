@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional AI Tools</title>
+<style>
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  padding:0;
+  background:#f4f4f4;
+}
+header{
+  background:#007BFF;
+  color:white;
+  padding:15px 0;
+  text-align:center;
+  font-size:24px;
+}
+nav{
+  background:#0056b3;
+  display:flex;
+  justify-content:center;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  padding:15px 20px;
+  display:block;
+}
+nav a:hover{
+  background:#003f7f;
+}
+section{
+  padding:20px;
+  max-width:700px;
+  margin:20px auto;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 0 10px gray;
+}
+h2{
+  text-align:center;
+}
+textarea,input{
+  width:95%;
+  padding:10px;
+  margin:10px 0;
+}
+button{
+  padding:10px 20px;
+  background:#007BFF;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  margin-bottom:10px;
+}
+.result{
+  background:#e8e8e8;
+  padding:10px;
+  border-radius:5px;
+  min-height:50px;
+}
+footer{
+  text-align:center;
+  padding:10px;
+  background:#007BFF;
+  color:white;
+  margin-top:20px;
+}
+</style>
+</head>
+<body>
+
+<header>Professional AI Tools</header>
+
+<nav>
+<a href="#caption">Caption Generator</a>
+<a href="#bio">Bio Generator</a>
+<a href="#hashtag">Hashtag Generator</a>
+<a href="#story">Story Generator</a>
+<a href="#email">Email Writer</a>
+</nav>
+
+<!-- Caption Generator -->
+<section id="caption">
+<h2>AI Caption Generator</h2>
+<textarea id="captionInput" placeholder="Write your topic..."></textarea>
+<br>
+<button onclick="generateCaption()">Generate Caption</button>
+<div id="captionResult" class="result"></div>
+</section>
+
+<!-- Bio Generator -->
+<section id="bio">
+<h2>AI Bio Generator</h2>
+<textarea id="bioInput" placeholder="Write your topic..."></textarea>
+<br>
+<button onclick="generateBio()">Generate Bio</button>
+<div id="bioResult" class="result"></div>
+</section>
+
+<!-- Hashtag Generator -->
+<section id="hashtag">
+<h2>AI Hashtag Generator</h2>
+<textarea id="hashtagInput" placeholder="Write your topic..."></textarea>
+<br>
+<button onclick="generateHashtag()">Generate Hashtags</button>
+<div id="hashtagResult" class="result"></div>
+</section>
+
+<!-- Story Generator -->
+<section id="story">
+<h2>AI Story Generator</h2>
+<textarea id="storyInput" placeholder="Write your topic..."></textarea>
+<br>
+<button onclick="generateStory()">Generate Story</button>
+<div id="storyResult" class="result"></div>
+</section>
+
+<!-- Email Writer -->
+<section id="email">
+<h2>AI Email Writer</h2>
+<textarea id="emailInput" placeholder="Write your topic..."></textarea>
+<br>
+<button onclick="generateEmail()">Generate Email</button>
+<div id="emailResult" class="result"></div>
+</section>
+
+<footer>© 2026 AI Tools by Umair</footer>
+
+<script>
+// Caption Generator
+function generateCaption(){
+  let text=document.getElementById("captionInput").value;
+  document.getElementById("captionResult").innerText="AI Caption: "+text+" is awesome! Share it on social media.";
+}
+
+// Bio Generator
+function generateBio(){
+  let text=document.getElementById("bioInput").value;
+  document.getElementById("bioResult").innerText="AI Bio: "+text+" is creative and unique for your profile.";
+}
+
+// Hashtag Generator
+function generateHashtag(){
+  let text=document.getElementById("hashtagInput").value;
+  document.getElementById("hashtagResult").innerText="#"+text.replace(/ /g," #")+" #AI #Tools";
+}
+
+// Story Generator
+function generateStory(){
+  let text=document.getElementById("storyInput").value;
+  document.getElementById("storyResult").innerText="AI Story: Once upon a time, "+text+" happened in a creative world...";
+}
+
+// Email Writer
+function generateEmail(){
+  let text=document.getElementById("emailInput").value;
+  document.getElementById("emailResult").innerText="AI Email: Dear user, "+text+". Regards, AI Tools.";
+}
+</script>
+
+</body>
+  </html>
